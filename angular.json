@@ -5,7 +5,11 @@
   "projects": {
     "cmail-sala": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "prefix": "cmail"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

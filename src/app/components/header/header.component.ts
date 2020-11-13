@@ -1,4 +1,4 @@
-import { Component, ɵRender3NgModuleRef } from '@angular/core';
+import { Component } from '@angular/core';
 @Component({
     selector: 'cmail-header',
     templateUrl: './header.component.html',
