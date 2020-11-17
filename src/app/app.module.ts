@@ -11,6 +11,7 @@ import { CaixaDeEntradaComponent } from './modules/caixa-de-entrada/caixa-de-ent
 import { LoginComponent } from './modules/login/login.component';
 import { CmailMensagemErroComponent } from './components/cmail-mensagem-erro/cmail-mensagem-erro.component';
 import { CmailMsgErroComponent } from './components/cmail-msg-erro/cmail-msg-erro.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CmailMsgErroComponent } from './components/cmail-msg-erro/cmail-msg-err
     BrowserModule,
     FormsModule,
     ModuloRoteamento,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
