@@ -1,20 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing. module';
 import { AppComponent } from './app.component';
-import { ModuloRoteamento } from './app.routes';
-import { CmailFormFieldDirective } from './components/cmail-form-group/cmail-form-field.directive';
-import { CmailFormGroupComponent } from './components/cmail-form-group/cmail-form-group.component';
-import { HeaderComponent } from './components/header/header.component';
-import { CadastroComponent } from './modules/cadastro/cadastro.component';
-import { CaixaDeEntradaComponent } from './modules/caixa-de-entrada/caixa-de-entrada.component';
-import { LoginComponent } from './modules/login/login.component';
-import { CmailMensagemErroComponent } from './components/cmail-mensagem-erro/cmail-mensagem-erro.component';
-import { CmailMsgErroComponent } from './components/cmail-msg-erro/cmail-msg-erro.component';
-import { HttpClientModule } from '@angular/common/http';
-import { CadastroModule } from './modules/cadastro/cadastro.module';
-import { CaixaDeEntradaModule } from './modules/caixa-de-entrada/caixa-de-entrada.module';
-import { LoginModule } from './modules/login/login.module';
 
 @NgModule({
   declarations: [
@@ -31,12 +20,13 @@ import { LoginModule } from './modules/login/login.module';
   imports: [
     BrowserModule,
     FormsModule,
-    ModuloRoteamento,
+    // ModuloRoteamento,
+    AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CadastroModule,
-    CaixaDeEntradaModule,
-    LoginModule
+    // CadastroModule,
+    // CaixaDeEntradaModule,
+    // LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
