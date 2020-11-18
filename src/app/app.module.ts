@@ -12,25 +12,31 @@ import { LoginComponent } from './modules/login/login.component';
 import { CmailMensagemErroComponent } from './components/cmail-mensagem-erro/cmail-mensagem-erro.component';
 import { CmailMsgErroComponent } from './components/cmail-msg-erro/cmail-msg-erro.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CadastroModule } from './modules/cadastro/cadastro.module';
+import { CaixaDeEntradaModule } from './modules/caixa-de-entrada/caixa-de-entrada.module';
+import { LoginModule } from './modules/login/login.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    CaixaDeEntradaComponent,
-    LoginComponent,
-    CadastroComponent,
-    CmailFormGroupComponent,
-    CmailFormFieldDirective,
-    CmailMensagemErroComponent,
-    CmailMsgErroComponent,
+    // HeaderComponent,
+    // CaixaDeEntradaComponent,
+    // LoginComponent,
+    // CadastroComponent,
+    // CmailFormGroupComponent,
+    // CmailFormFieldDirective,
+    // CmailMensagemErroComponent,
+    // CmailMsgErroComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ModuloRoteamento,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CadastroModule,
+    CaixaDeEntradaModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
