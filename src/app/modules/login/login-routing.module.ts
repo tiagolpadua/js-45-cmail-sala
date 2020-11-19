@@ -9,9 +9,6 @@ const rotasLogin: Routes = [
 @NgModule({
     imports: [
         RouterModule.forChild(rotasLogin)
-    ],
-    exports: [
-        RouterModule
     ]
 })
 export class LoginRoutingModule { }

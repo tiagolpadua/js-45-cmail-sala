@@ -9,9 +9,6 @@ const rotasCaixaDeEntrada: Routes = [
 @NgModule({
     imports: [
         RouterModule.forChild(rotasCaixaDeEntrada)
-    ],
-    exports: [
-        RouterModule
     ]
 })
 export class CaixaDeEntradaRoutingModule { }
